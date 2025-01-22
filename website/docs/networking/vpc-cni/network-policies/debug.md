@@ -50,6 +50,10 @@ As you could see from the outputs calls from the 'ui' component have been denied
 
 Let's fix the network policy and try again.
 
+```file
+manifests/modules/networking/network-policies/apply-network-policies/allow-order-ingress-success-debug.yaml
+```
+
 ```bash wait=30
 $ kubectl apply -f ~/environment/eks-workshop/modules/networking/network-policies/apply-network-policies/allow-order-ingress-success-debug.yaml
 ```
